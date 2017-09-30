@@ -6,18 +6,21 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.example.b10542.minju.MainActivity">
-    <LinearLayout
-        android:layout_width="368dp"
-        android:layout_height="495dp"
+   <LinearLayout
+        android:layout_width="601dp"
+        android:layout_height="887dp"
         android:orientation="vertical"
-        tools:layout_editor_absoluteY="8dp"
-        tools:layout_editor_absoluteX="8dp">
+       tools:layout_editor_absoluteY="8dp"
+       tools:layout_editor_absoluteX="8dp" />
+
     <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
         android:layout_weight="1"
         android:orientation="vertical"
-        android:background="#aa00ff">
+        android:background="#aa00ff"
+        tools:layout_editor_absoluteY="8dp"
+        tools:layout_editor_absoluteX="8dp">
             <Button
                 android:id="@+id/Button1"
                 android:layout_width="wrap_content"
@@ -38,32 +41,47 @@
             />
 
     </LinearLayout>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:orientation="horizontal"
-            android:background="#00aaff">
-            <Button
-                android:id="@+id/Button4"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text= "Button4"
-                />
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:text="Button5"
-                />
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Button6"
-                android:layout_gravity="bottom"
-                />
-        </LinearLayout>
 
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#00aaff"
+        android:orientation="horizontal"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp">
 
-</LinearLayout>
-</android.support.constraint.ConstraintLayout>
+        <Button
+            android:id="@+id/Button4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Button4" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Button5" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:text="Button6" />
+        >
+    </LinearLayout>
+
+    <!--<LinearLayout-->
+            <!--android:orientation="vertical"-->
+            <!--android:layout_width="601dp"-->
+            <!--android:layout_height="887dp"-->
+            <!--android:layout_weight="1"-->
+            <!--tools:layout_editor_absoluteY="0dp"-->
+            <!--tools:layout_editor_absoluteX="0dp">-->
+            <!--<ListView-->
+                <!--android:id="@+id/listView"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent"-->
+                <!--/>-->
+        <!--</LinearLayout>-->
+    </android.support.constraint.ConstraintLayout>
